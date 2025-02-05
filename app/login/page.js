@@ -17,6 +17,7 @@ export default function Login() {
     setForm({ ...form, [name]: value });
   };
 
+  //delete the authToken
   const deleteCookie = (cookieName) => {
     document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
   };
@@ -41,6 +42,8 @@ export default function Login() {
   };
 
   const handleSubmit = async (e) => {
+    // if phone has data means the data was filled by a bot because phone is outside of the screen
+    // redundant validation
     if (form["phone"] === "") {
       let login = await sendLoginInfo(form.username, form.password);
       if (login && login.data.success) {
