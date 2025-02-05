@@ -1,0 +1,67 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #DAAF42;
+  }
+  
+  .cardGrid {
+    display: column;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  .noteData{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: left;
+    line-height: 25px;
+  }
+  
+  .cardContainer{
+    margin: 40px;
+    background-color: #2b2a2a;
+    color: #DAAF42;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(218, 175, 66, 0.5);
+    transition: transform 0.3s ease;
+  }
+  .cardContainer:hover {
+    transform: scale(1.02);
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    background-color: #DAAF42;
+    color: #262525;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 1vh;
+  }
+  
+  .author{
+    color:#DAAF42;
+  }
+  .button:hover {
+    background-color: #b89033;
+  }
+  

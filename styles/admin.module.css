@@ -1,0 +1,154 @@
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0e0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 20px; 
+    box-sizing: border-box; 
+    overflow: hidden;
+  }
+  
+  .logincontainer {
+    display: flex;
+    width: 900px;
+    height: 680px;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .loginwelcome {
+    flex: 1;
+    background: linear-gradient(135deg, #f1e46e, #ffc402);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(29, 29, 29);
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .loginform {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  
+  .loginform h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #cac9c9;
+  }
+  
+  .loginform p {
+    color: #686767;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .loginform label {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .loginform input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #292929;
+  }
+  
+  .loginbutton {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #DAAF42;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .input:focus {
+    border-color: #b89033;
+  }
+  .toggleButton {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #DAAF42;
+    cursor: pointer;
+    outline: none;
+    display: flex;           
+    align-items: center;     
+    justify-content: center; 
+    padding: 0.5rem;         
+  }
+  .passwordWrapper {
+    position: relative;
+  }
+  .input {
+    width: 100%;
+    padding: 0.8rem;
+    padding-right: 2.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #DAAF42;
+    background-color: #444;
+    color: #DAAF42;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .loginbutton:hover {
+    background-color: #f5d177;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    
+    .logincontainer {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  
+    .loginwelcome {
+      display: none; 
+    }
+  
+    .loginform {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .loginform h2 {
+      font-size: 1.5em;
+    }
+  
+    .loginbutton {
+      font-size: 0.9em;
+      padding: 10px;
+    }
+  }
